@@ -148,6 +148,7 @@ p:empty {
 	padding: 25px;
 	padding-bottom: 10px;
 	padding-left: 50px;
+	padding-right: 50px;
 	text-align: left;
 }
 
@@ -162,6 +163,8 @@ p:empty {
 	font-weight: bold;
 	padding-left: 0px;
 	border: none;
+	line-height: 30px;
+	margin-bottom: 15px;
 }
 
 .quote blockquote:before {
@@ -229,6 +232,22 @@ p:empty {
 	background-position: right center;
 	float: right;
 	margin-right: 50px;
+}
+
+div.notes {
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 27px;
+}
+
+.notes ol {
+	list-style: none;
+}
+
+.notes a {
+	color: #444;
+	border-bottom: 2px solid #d86135;
+	text-decoration: none;
 }
 
 @media only screen and (max-width: 700px){
