@@ -15,6 +15,10 @@
 	clear: both;
 }
 
+a:active {
+	top: 1px;
+}
+
 body {
 	background-image: url("static/cream_dust.png");
 	font-family: "Open Sans", Arial;
@@ -51,12 +55,15 @@ body {
 
 .igel:hover, .igel_left:hover, .igel_right:hover {
 	-webkit-animation-name: bounce;
+	animation-name: bounce;
 }
 .igel_left:active {
 	-webkit-animation-name: fadeOutLeftBig;
+	animation-name: fadeOutLeftBig;
 }
 .igel_right:active {
 	-webkit-animation-name: fadeOutRightBig;
+	animation-name: fadeOutRightBig;
 }
 
 .textright {
@@ -101,6 +108,13 @@ h1 {
 
 .date {
 	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-top: 15px;
+}
+
+.date a {
+	color: #aaa;
+	text-decoration: none;
 }
 
 /* TEXT */
