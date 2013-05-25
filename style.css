@@ -24,7 +24,8 @@ body {
 }
 
 .wrapper {
-	width: 700px;
+	max-width: 700px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -118,7 +119,7 @@ h2, p {
 
 .image img {
 	max-width: 700px;
-
+	width: 100%;
 }
 
 .description {
@@ -165,7 +166,8 @@ h2, p {
 }
 /* Audio */
 .audio iframe.tumblr_audio_player {
-	width: 600px;
+	width: 100%;
+	margin-bottom: 15px;
 }
 
 /* video */
@@ -204,5 +206,18 @@ h2, p {
 }
 
 @media only screen and (max-width: 700px){
-	/* code here */
+	.header div {
+		float: none;
+		width: 100% !important;
+		text-align: center !important;
+		padding: 0px !important;
+	}
+
+	h1 {
+		line-height: 100px !important;
+	}
+
+	.audio iframe.tumblr_audio_player {
+		height: 85px !important;
+	}
 }
