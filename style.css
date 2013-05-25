@@ -57,14 +57,6 @@ body {
 	-webkit-animation-name: bounce;
 	animation-name: bounce;
 }
-.igel_left:active {
-	-webkit-animation-name: fadeOutLeftBig;
-	animation-name: fadeOutLeftBig;
-}
-.igel_right:active {
-	-webkit-animation-name: fadeOutRightBig;
-	animation-name: fadeOutRightBig;
-}
 
 .textright {
 	width: 250px;
@@ -110,6 +102,7 @@ h1 {
 	margin-bottom: 50px;
 	padding-left: 50px;
 	padding-top: 15px;
+	color: #aaa;
 }
 
 .date a {
@@ -137,13 +130,29 @@ h2, p {
 .image img {
 	max-width: 700px;
 	width: 100%;
+	display: block;
 }
+.image .photos img {
+	margin-bottom: 15px;
+}
+.image .photos img:last-child {
+	margin-bottom: 0px;
+}
+
+p:empty {
+	margin-bottom: 0px;
+}
+
 
 .description {
 	padding: 25px;
 	padding-bottom: 10px;
 	padding-left: 50px;
 	text-align: left;
+}
+
+.audio .description {
+	padding: 0px;
 }
 
 /* QUOTES */

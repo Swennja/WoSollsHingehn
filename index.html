@@ -78,9 +78,15 @@
 				</div>
 			</div>
 			<div class="pagination clearfix">
-				<a href="#" class="igel_left animated">älter</a>
+				<a href="http://google.com" id="igel_left" class="igel_left animated">älter</a>
 				<a href="#" class="igel_right animated">neuer</a>
 			</div>
 		</div>
+		<script>
+			var d = document.getElementById("igel_left");
+			d.onclick=function(){
+				d.className = d.className + " fadeOutLeftBig";
+			}
+		</script>
 	</body>
 </html>
