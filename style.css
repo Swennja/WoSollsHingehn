@@ -74,6 +74,12 @@ h1 {
 	margin-bottom: 50px;
 }
 
+.post a {
+	color: #444;
+	text-decoration: none;
+	border-bottom: 2px solid #d86135;
+}
+
 /* TEXT */
 
 h2, p {
