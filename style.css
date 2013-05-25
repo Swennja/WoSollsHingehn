@@ -247,3 +247,12 @@ p:empty {
 		height: 85px !important;
 	}
 }
+
+@media only screen and (max-width: 480px){
+	.post {
+		padding: 25px;
+	}
+	.post.image {
+		padding: 0px;
+	}
+}

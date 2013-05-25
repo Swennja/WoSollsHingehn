@@ -95,6 +95,15 @@
 				{/block:Date}
 				{/block:Posts}
 			</div>
+
+			{block:PostNotes}
+				<div class="notes">
+					<div class="content">
+						{PostNotes}
+					</div>
+				</div>
+			{/block:PostNotes}
+
 			{block:Pagination}
 			<div class="pagination clearfix">
 				{block:NextPage} <a href="{NextPage}" class="igel_left animated">älter</a>
