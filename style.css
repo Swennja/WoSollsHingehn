@@ -136,3 +136,7 @@ h2, p {
 	float: left;
 	padding-right: 5px;
 }
+/* Audio */
+.audio iframe.tumblr_audio_player {
+	width: 600px;
+}
