@@ -20,6 +20,7 @@ body {
 	font-family: "Open Sans", Arial;
 	font-size: 17px;
 	color: #444;
+	padding-bottom: 50px;
 }
 
 .wrapper {
@@ -43,12 +44,18 @@ body {
 	padding-right: 25px;
 }
 
-.igel {
+.igel, .igel img {
 	width: 200px;
 }
 
-.igel:hover {
+.igel:hover, .igel_left:hover, .igel_right:hover {
 	-webkit-animation-name: bounce;
+}
+.igel_left:active {
+	-webkit-animation-name: fadeOutLeftBig;
+}
+.igel_right:active {
+	-webkit-animation-name: fadeOutRightBig;
 }
 
 .textright {
@@ -170,4 +177,28 @@ h2, p {
 .video iframe {
 	width: 100%;
 	height: 394px;
+}
+
+/* pagination */
+.pagination a {
+	display: block;
+	color: #444;
+	text-decoration: none;
+	line-height: 32px;
+	background-size: 50px auto;
+	background-repeat: no-repeat;
+}
+.pagination .igel_left {
+	background-image: url('static/miniigel_left.png');
+	padding-left: 60px;
+	float: left;
+	margin-left: 50px;
+}
+.pagination .igel_right {
+	background-image: url('static/miniigel_right.png');
+	text-align: right;
+	padding-right: 60px;
+	background-position: right center;
+	float: right;
+	margin-right: 50px;
 }
