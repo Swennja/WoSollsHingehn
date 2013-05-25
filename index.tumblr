@@ -1,9 +1,13 @@
 ﻿<html>
 	<head>
-		<title>Svenjas coole Seite</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="animate-custom.css">
+		<title>{Title}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="http://danieldiekmeier.de/static/wsh2/style.css">
+		<link rel="stylesheet" type="text/css" href="http://danieldiekmeier.de/static/wsh2/animate-custom.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="shortcut icon" href="http://danieldiekmeier.de/static/wsh2/favicon.png">
 
 	</head>
 	<body>
@@ -23,64 +27,82 @@
 			</div>
 
 			<div class="content">
-				<div class="post text">
-					<h2>Wo gehts lang?</h2>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-				</div>
-				<div class="date">
-					<a href="/">25. Mai 2013</a>
-				</div>
-				<div class="post image">
-					<img src="static/eule_gross.jpg">
-					<div class="description">
-						<p>Schuhuuu</p>
+				{block:Posts}
+				{block:Text}
+					<div class="post text">
+						{block:Title}
+						<h2>{Title}</h2>
+						{/block:Title}
+						{Body}
 					</div>
-				</div>
-				<div class="post video">
-					<iframe width="560" height="315" src="http://www.youtube.com/embed/li1XCowmLp4" frameborder="0" allowfullscreen></iframe>
-					<div class="description">
-						<p>Schuhuuu</p>
+				{/block:Text}
+				{block:Photo}
+					<div class="post image">
+						<img src="{PhotoURL-HighRes}">
+						{block:Caption}
+							<div class="description">
+								<p>{Caption}</p>
+							</div>
+						{/block:Caption}
 					</div>
-				</div>
-				<div class="post quote">
-					<blockquote>Alle Bäume stehen im Wald!</blockquote>
-					<div class="source">
-						<p>Einstein</p>
+				{/block:Photo}
+				{block:Photoset}
+					<div class="post image">
+						{block:Photos}
+							<img src="{PhotoURL-HighRes}">
+						{/block:Photos}
+						{block:Caption}
+							<div class="description">
+								<p>{Caption}</p>
+							</div>
+						{/block:Caption}
 					</div>
-				</div>
+				{/block:Photoset}
+				{block:Video}
+					<div class="post video">
+						{Video-500}
+						{block:Caption}
+							<div class="description">
+								<p>{Caption}</p>
+							</div>
+						{/block:Caption}
+					</div>
+				{/block:Video}
+				{block:Quote}
+					<div class="post quote">
+						<blockquote>{Quote}</blockquote>
+						{block:Source}
+							<div class="source">
+								<p>{Source}</p>
+							</div>
+						{/block:Source}
+					</div>
+				{/block:Quote}
+				{block:Audio}
 				<div class="post audio">
-					<iframe class="tumblr_audio_player tumblr_audio_player_51088790509" src="http://konferenz28.de/post/51088790509/audio_player_iframe/konferenz28/tumblr_mn7tueK8QK1rhtl98?audio_file=http%3A%2F%2Fwww.tumblr.com%2Faudio_file%2Fkonferenz28%2F51088790509%2Ftumblr_mn7tueK8QK1rhtl98&amp;color=white" frameborder="0" allowtransparency="true" scrolling="no" width="640" height="169" style="-webkit-transform: translate3d(0px, 0px, 0px);"></iframe>
-					<div class="caption">
-						<p><a href="http://konferenz28.de/post/46365992170" class="tumblr_blog">konferenz28</a>:</p>
-						<blockquote>
-							<p><strong>K/28_024: Die Freundinnen-Episode</strong></p>
-							<p><a href="http://konferenz28.s3.amazonaws.com/k28_024.mp3">Download (71 Minuten, 34&nbsp;MB)</a></p>
-							<p>Wieder einmal sind Daniel und Max nicht allein! Sie werden in dieser Folge unterstützt von Svenja und Kika, die über mädchenhafte Dinge sprechen, genauer gesagt über Wikipedia-Parties, VHS vs DVD vs BluRay vs AppleTV, Kleidung (Kika trägt welche, Max fängt gerade damit an), und die Serie Episodes mit Matt LeBlanche.</p>
-							<ul>
-								<li><a href="http://en.wikipedia.org/wiki/The_Weekenders">Wochenend-Kids</a></li>
-								<li><a href="http://shop.lego.com/en-US/Space-Shuttle-336">Neues Space-Shuttle</a></li>
-								<li><a href="http://www.wikipedia.de/">Wikipedia.de</a></li>
-								<li><a href="http://www.imdb.com/title/tt0151804/">Office Space</a></li>
-								<li>Der Comic mit der Schrift auf der Hose konnte leider nicht gefunden werden. Danke, Max!</li>
-								<li><a href="http://www.griesson-debeukelaer.de/deDE/marken/prinzen-rolle/">Prinzen Rolle</a></li>
-								<li><a href="http://www.google.de/search?q=mythbusters+woman">Mythbusters Woman</a> (Daniel hat das mal für euch gegoogelt)</li>
-								<li><a href="http://i.imgur.com/d5oYS.jpg">Mythbuster-Typ nackt</a></li>
-								<li><a href="http://2.bp.blogspot.com/_peGbBMqGJ98/S-AUmyIo48I/AAAAAAAABIU/6kFoznfGQBI/s1600/karibyron3.jpg">Frau mit Dings und Dings</a></li>
-								<li><a href="http://en.wikipedia.org/wiki/Episodes_(TV_series)">Episodes</a></li>
-								<li><a href="http://en.wikipedia.org/wiki/Matt_Le_Blanc">Matt LeBlanche</a> tat jahrelang nichts.</li>
-								<li><a href="http://michelhonold.de">Michel Honold</a></li>
-							</ul>
-							<p>Diese Folge enthält 100% mehr Leute, und 100% dieser Leute sind Mädchen! Es ist unglaublich und mathematisch dennoch korrekt! Deshalb solltet ihr uns auch auf Twitter folgen: <a href="http://twitter.com/konferenz28">@konferenz28</a>, aber zusätzlich noch <a href="http://twitter.com/swennja">@swennja</a> und <a href="http://twitter.com/kika_auch">@kika_auch</a>.</p>
-						</blockquote>
-						<p>Ich durfte nochmal Gast sein und hatte viel Spaß.</p>
-					</div>
+					{AudioEmbed-640}
+					{block:Caption}
+						<div class="description">
+							<p>{Caption}</p>
+						</div>
+					{/block:Caption}
 				</div>
+				{/block:Audio}
+				{block:Date}
+				<div class="date">
+					<a href="{Permalink}">{DayOfMonth}. {Month} {Year}</a>{block:ContentSource} / <a href="{SourceURL}">{SourceTitle}</a>{/block:ContentSource}
+				</div>
+				{/block:Date}
+				{/block:Posts}
 			</div>
+			{block:Pagination}
 			<div class="pagination clearfix">
-				<a href="#" class="igel_left animated">älter</a>
-				<a href="#" class="igel_right animated">neuer</a>
+				{block:NextPage} <a href="{NextPage}" class="igel_left animated">älter</a>
+				{/block:NextPage}
+				{block:PreviousPage} <a href="{PreviousPage}" class="igel_right animated">neuer</a>
+				{/block:PreviousPage}
 			</div>
+			{/block:Pagination}
 		</div>
 	</body>
 </html>
