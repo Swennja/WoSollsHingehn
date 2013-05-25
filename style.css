@@ -80,6 +80,17 @@ h1 {
 	border-bottom: 2px solid #d86135;
 }
 
+.post ul, .post ol {
+	line-height: 27px;
+	margin-left: 25px;
+	margin-bottom: 15px;
+}
+
+.post blockquote {
+	padding-left: 25px;
+	border-left: 5px solid #d86135;
+}
+
 /* TEXT */
 
 h2, p {
