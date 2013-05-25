@@ -18,7 +18,7 @@
 				</div>
 
 				<div class="igel animated">
-					<a href="/"><img src="http://danieldiekmeier.de/static/wsh2/igel.png"></a>
+					<a href="/"><img src="http://danieldiekmeier.de/static/wsh2/static/igel.png"></a>
 				</div>
 
 				<div class="textright">
@@ -48,11 +48,11 @@
 				{/block:Photo}
 				{block:Photoset}
 					<div class="post image">
+						<div class="photos">
 						{block:Photos}
-							<div class="photos">
 								<img src="{PhotoURL-HighRes}">
-							</div>
 						{/block:Photos}
+						</div>
 						{block:Caption}
 							<div class="description">
 								<p>{Caption}</p>
